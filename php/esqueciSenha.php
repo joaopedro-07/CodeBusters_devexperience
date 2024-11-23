@@ -28,8 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,8 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/esqueciSenha.css">
-    <script src="../javascript/esqueci.js" defer></script>
-    <link rel="shortcut icon" href="img/hisotoria-logo.png" type="image/x-icon">
+    <script src="../js/esqueci.js" defer></script>
     <title>Redefinir Senha</title>
 </head>
 
@@ -48,14 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <form action="" method="POST" id="redefinir-senha">
                 <a id="voltar">Voltar</a>
                 <h1>Redefinir senha</h1>
-                <p>Insira seu email para validar sua identidade e proceder com a alteração da senha</p>
                 <label for="email">Email <p style="color:red;"><?php echo $mensagem;?></p></label>
                 <input type="email" name="email" id="email" placeholder="@email.com">
 
-                <label for="senha">Senha</label>
+                <label for="senha">Nova Senha</label>
                 <input type="password" name="senha" id="senha" placeholder="******">
 
-                <button type="submit">Confirmar</button>
+                <button type="submit">Confirmar Mudança</button>
             </form>
         </div>
     </main>
