@@ -33,13 +33,12 @@ $resultado_alunos = $conexao->query($sql_alunos);
 <body>
 <header class="header">
         <div class="logo">MeuSite</div>
+        <a href="inici"></a>
         <nav class="menu">
             <ul class="nav-list">
-                <li><a href="glossario.php">Home</a></li>
-                <li><a href="atividades.php">Sobre</a></li>
-                <li><a href="enem.php">Teste</a></li>
-                <li><a href="perfil.php">Teste2</a></li>
-                <li><img id="logout" src="../img/sair.png" alt=""></li>
+                <li><a href="inicio.php">Início</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="planos.php">Planos de Treino</a></li>
             </ul>
         </nav>
     </header>

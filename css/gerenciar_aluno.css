@@ -207,3 +207,51 @@ footer .footer-text {
         font-size: 12px; /* Ajusta o tamanho do texto no rodapé */
     }
 }
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Estilo geral para os botões */
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Botão de editar */
+  .editar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+  
+  .editar:hover {
+    background-color: #45a049; /* Verde mais escuro */
+  }
+  
+  /* Botão de excluir */
+  .excluir {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+  }
+  
+  .excluir:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro */
+  }
+  
+  /* Ajustes adicionais */
+  button:focus {
+    outline: 2px solid #333;
+  }
+  

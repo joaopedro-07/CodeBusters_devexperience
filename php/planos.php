@@ -24,47 +24,125 @@ if (!isset($_SESSION['nome_sessao'])) {
         <div class="logo">MeuSite</div>
         <nav class="menu">
             <ul class="nav-list">
-                <li><a href="glossario.php">Home</a></li>
-                <li><a href="atividades.php">Sobre</a></li>
-                <li><a href="enem.php">Teste</a></li>
-                <li><a href="perfil.php">Teste2</a></li>
-                <li><img id="logout" src="../img/sair.png" alt=""></li>
+                <li><a href="inicio.php">Início</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="planos.php">Planos de Treino</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    
     <main class="container">
-    <section class="workout-plan">
-      <h2>Seus Exercícios</h2>
-      <ul class="exercise-list">
-        <li class="exercise">
-          <label>
-            <input type="checkbox" class="exercise-check">
-            Aquecimento: 10 minutos de corrida leve
-          </label>
-        </li>
-        <li class="exercise">
-          <label>
-            <input type="checkbox" class="exercise-check">
-            Supino reto: 3 séries de 12 repetições
-          </label>
-        </li>
-        <li class="exercise">
-          <label>
-            <input type="checkbox" class="exercise-check">
-            Agachamento livre: 4 séries de 10 repetições
-          </label>
-        </li>
-        <li class="exercise">
-          <label>
-            <input type="checkbox" class="exercise-check">
-            Flexão de braço: 3 séries até a falha
-          </label>
-        </li>
-      </ul>
-    </section>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <h2>Plano A</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Corrida: 15 minutos
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Supino reto: 4 séries de 10
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <h2>Plano B</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Flexão de braço: 3 séries
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Abdominal: 4 séries de 15
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <h2>Plano C</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Agachamento livre: 3 séries de 12
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Prancha: 3 séries de 1 min
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <h2>Plano D</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Subida no banco: 4 séries de 10
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Remada curvada: 3 séries de 10
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <h2>Plano E</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Bicicleta: 20 minutos
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Levantamento terra: 4 séries de 8
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <h2>Plano F</h2>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Pull-up: 3 séries de 8
+            </label>
+          </li>
+          <li class="exercise">
+            <label>
+              <input type="checkbox" class="exercise-check">
+              Extensão de tríceps: 3 séries de 12
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
-    </main>
     <footer>
         <div class="footer-logo">
             Meu Site
