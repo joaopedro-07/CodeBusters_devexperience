@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div id="container">
             <!-- Formulário de Login -->
             <form action="" method="POST" id="login" class="active-form">
-                <h1>ENTRAR</h1>
+                <h1>Academia Youtan</h1>
                 <label for="email_login">Email</label>
                 <input type="email" name="email_login" id="email_login" required placeholder="@email.com">
 
