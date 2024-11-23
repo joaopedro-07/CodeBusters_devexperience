@@ -31,91 +31,22 @@ $resultado_alunos = $conexao->query($sql_alunos);
 </head>
 
 <body>
-    <header class="header">
-        <div class="container logo-menu">
-            <div class="logo">
-                <a href="inicio.php"><img src="../img/Logo Nova Site História.png" alt="Logo"></a>
-            </div>
-            <nav class="menu">
-                <ul class="nav-list">
-                    <li class="dropdown">
-                        <a href="">Períodos Históricos</a>
-
-                        <div class="dropdown-menu">
-                            <a href="pre_historia.php">Pré-História</a>
-                            <a href="idade_antiga.php">Idade Antiga</a>
-                            <a href="idade_media.php">Idade Média</a>
-                            <a href="idade_moderna.php">Idade Moderna</a>
-                            <a href="idade_contemporanea.php">Idade Contemporânea</a>
-                        </div>
-                    </li>
-                    <li><a href="glossario.php">Glossário</a></li>
-                    <li><a href="atividades.php">Atividades Complementares</a></li>
-                    <li><a href="enem.php">Enem</a></li>
-
-
-                    <?php if (isset($_SESSION['nome_sessao'])): ?>
-                        <div class="user-vector">
-                            <a href="perfil.php">
-                                <img id="logo-vector" src="../img/user-vector.png" alt="">
-                                <p>
-                                    <?= $_SESSION['nome_sessao'] ?>
-                                </p>
-                                <p>
-                                    <?= $_SESSION['tipo_sessao'] ?>
-                                </p>
-                        </div>
-                        <li><img id="logout" src="../img/logout.png" alt=""></li>
-                    <?php else: ?>
-                        <li><a href="index.php">LOGIN</a></li>
-                    <?php endif; ?>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div id="mobile-header">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
-        </button>
-        <a id="mobile-logo" href="inicio.php"><img src="../img/Logo Nova Site História.png" class="logo" alt=""></a>
-        <div class="user-options">
-            <div class="user-vector">
-                <a href="perfil.php">
-                    <?php if (isset($_SESSION['nome_sessao'])): ?>
-                        <img id="logo-vector" src="../img/user-vector.png" alt="Imagem do usuário">
-                        <div class="user-info">
-                            <p><?= $_SESSION['nome_sessao'] ?></p>
-                            <p><?= $_SESSION['tipo_sessao'] ?></p>
-                        </div>
-                    <?php endif; ?>
-                </a>
-            </div>
-        </div>
-        <nav id="nav">
-            <ul id="mobile-menu" role="mobile-menu">
-                <li><a href="pre_historia.php">Pré-História</a></li>
-                <li><a href="idade_antiga.php">Idade Antiga</a></li>
-                <li><a href="idade_media.php">Idade Média</a></li>
-                <li><a href="idade_moderna.php">Idade Moderna</a></li>
-                <li><a href="idade_contemporanea.php">Idade Contemporânea</a></li>
-                </li>
-                <li><a href="glossario.php">Glossário</a></li>
-                <li><a href="atividades.php">Atividades Complementares</a></li>
-                <li><a href="enem.php">Enem</a></li>
-
-                <?php if (isset($_SESSION['nome_sessao'])): ?>
-                    <a id="logout-mobile">SAIR</a>
-                <?php else: ?>
-                    <a href="index.php">LOGIN</a>
-                <?php endif; ?>
+<header class="header">
+        <div class="logo">MeuSite</div>
+        <nav class="menu">
+            <ul class="nav-list">
+                <li><a href="glossario.php">Home</a></li>
+                <li><a href="atividades.php">Sobre</a></li>
+                <li><a href="enem.php">Teste</a></li>
+                <li><a href="perfil.php">Teste2</a></li>
+                <li><img id="logout" src="../img/sair.png" alt=""></li>
             </ul>
         </nav>
-    </div>
+    </header>
+    
 
     <main>
         <div id="container">
-            <a id="voltar" href="perfil.php"><img src="../img/voltar_seta.png" alt="">Voltar</a>
             <h1 id="title-gerenc">Gerenciar Usúarios</h1>
             <div class="tabela-div">
                 <table>

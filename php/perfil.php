@@ -237,7 +237,7 @@ $conexao->close();
 
             <!-- Exibe botões extras se o usuário for administrador -->
             <?php if ($_SESSION['tipo_sessao'] === 'Administrador'): ?>
-                <h2>Opções de Administrador</h2>
+                <h2>    Opções de Administrador</h2>
                 <button class="btn admin-btn" onclick="location.href='gerenciar_alunos.php'">Gerenciar usuários</button>
                 <button class="btn admin-btn" onclick="location.href='criar_adm.php'">Adicionar administrador</button>
             <?php endif; ?>

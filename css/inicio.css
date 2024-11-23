@@ -207,3 +207,26 @@ footer .footer-text {
         font-size: 12px; /* Ajusta o tamanho do texto no rodapé */
     }
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+button {
+    margin-top: 50px;
+    height: 100px;
+    width: 250px;
+    background-color: #2595f7;
+    border-radius: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+}

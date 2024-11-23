@@ -2,7 +2,7 @@
     $dbhost="localhost";
     $dbusuario="root";
     $dbpassword="";
-    $dbname="academia_youtan";
+    $dbname="site_historia";
 
     $conexao = mysqli_connect($dbhost,$dbusuario,$dbpassword,$dbname);
     

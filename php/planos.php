@@ -17,23 +17,53 @@ if (!isset($_SESSION['nome_sessao'])) {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Correção do link do FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Home</title>
+    <title>Área de Aluno</title>
 </head>
 <body>
     <header class="header">
         <div class="logo">MeuSite</div>
         <nav class="menu">
             <ul class="nav-list">
-                <li><a href="inicio.php">Início</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
-                <li><a href="planos.php">Planos de Treino</a></li>
+                <li><a href="glossario.php">Home</a></li>
+                <li><a href="atividades.php">Sobre</a></li>
+                <li><a href="enem.php">Teste</a></li>
+                <li><a href="perfil.php">Teste2</a></li>
+                <li><img id="logout" src="../img/sair.png" alt=""></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Bem-vindo à página de Academia!</h2>
-    <button class="btn admin-btn" onclick="location.href='planos.php'">Área do aluno</button>
-    <button class="btn admin-btn" onclick="location.href='gerenciar_alunos.php'">Área do instrutor</button>
+    <main class="container">
+    <section class="workout-plan">
+      <h2>Seus Exercícios</h2>
+      <ul class="exercise-list">
+        <li class="exercise">
+          <label>
+            <input type="checkbox" class="exercise-check">
+            Aquecimento: 10 minutos de corrida leve
+          </label>
+        </li>
+        <li class="exercise">
+          <label>
+            <input type="checkbox" class="exercise-check">
+            Supino reto: 3 séries de 12 repetições
+          </label>
+        </li>
+        <li class="exercise">
+          <label>
+            <input type="checkbox" class="exercise-check">
+            Agachamento livre: 4 séries de 10 repetições
+          </label>
+        </li>
+        <li class="exercise">
+          <label>
+            <input type="checkbox" class="exercise-check">
+            Flexão de braço: 3 séries até a falha
+          </label>
+        </li>
+      </ul>
+    </section>
+  </main>
     </main>
     <footer>
         <div class="footer-logo">
